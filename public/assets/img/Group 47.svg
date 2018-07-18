@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 287 196.5">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #2072b2;
+      }
+
+      .cls-2 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-4 {
+        opacity: 0.99;
+      }
+
+      .cls-5, .cls-7 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+
+      .cls-7 {
+        fill: #2072b2;
+      }
+
+      .cls-8 {
+        filter: url(#Path_10);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.501" gradientTransform="matrix(1.519, 0, 0, 1.519, -0.26, -0.26)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8a74d"/>
+      <stop offset="1" stop-color="#fffefe"/>
+    </radialGradient>
+    <filter id="Path_10" x="0" y="147.405" width="287" height="49.095" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_47" data-name="Group 47" transform="translate(-1389.5 -1416)">
+    <g id="Group_28" data-name="Group 28" transform="translate(486 134.427)">
+      <g id="Rectangle_22" data-name="Rectangle 22" class="cls-1" transform="translate(1155.89 1281.573) rotate(90)">
+        <path class="cls-5" d="M8,0H154.621a8,8,0,0,1,8,8V216.826a0,0,0,0,1,0,0H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0Z"/>
+        <path class="cls-6" d="M8,.5H154.621a7.5,7.5,0,0,1,7.5,7.5V215.826a.5.5,0,0,1-.5.5H8a7.5,7.5,0,0,1-7.5-7.5V8A7.5,7.5,0,0,1,8,.5Z"/>
+      </g>
+      <g id="Rectangle_23" data-name="Rectangle 23" class="cls-2" transform="translate(1148.066 1299.351) rotate(90)">
+        <rect class="cls-5" width="132.42" height="201.178"/>
+        <rect class="cls-6" x="0.5" y="0.5" width="131.42" height="200.178"/>
+      </g>
+      <g id="Rectangle_25" data-name="Rectangle 25" class="cls-1" transform="translate(1029.594 1289.717)">
+        <rect class="cls-5" width="35.765" height="4.517" rx="2.259"/>
+        <rect class="cls-6" x="0.5" y="0.5" width="34.765" height="3.517" rx="1.759"/>
+      </g>
+      <g class="cls-8" transform="matrix(1, 0, 0, 1, 903.5, 1281.57)">
+        <g id="Path_10-2" data-name="Path 10" class="cls-3" transform="translate(19.5 156.9)">
+          <path class="cls-5" d="M 242.0737915039063 9.595060348510742 L 6.130229473114014 9.595060348510742 L 0.867012619972229 0.4999974966049194 L 247.1484527587891 0.4999974966049194 L 242.0737915039063 9.595060348510742 Z"/>
+          <path class="cls-7" d="M 241.7802124023438 9.095060348510742 L 246.2969207763672 0.9999974966049194 L 1.734064102172852 0.9999974966049194 L 6.418591499328613 9.095060348510742 L 241.7802124023438 9.095060348510742 M 242.3673706054688 10.09506034851074 L 5.841898441314697 10.09506034851074 L -7.62939453125e-06 -2.506256123524508e-06 L 248 -2.506256123524508e-06 L 242.3673706054688 10.09506034851074 Z"/>
+        </g>
+      </g>
+      <g id="Rectangle_27" data-name="Rectangle 27" class="cls-1" transform="translate(1030.092 1438.477)">
+        <rect class="cls-5" width="34.163" height="4.412" rx="2.206"/>
+        <rect class="cls-6" x="0.5" y="0.5" width="33.163" height="3.412" rx="1.706"/>
+      </g>
+    </g>
+    <rect id="Rectangle_40" data-name="Rectangle 40" class="cls-4" width="162" height="5" transform="translate(1478.105 1567.286) rotate(-59)"/>
+    <rect id="Rectangle_41" data-name="Rectangle 41" class="cls-4" width="163" height="5" transform="translate(1496.74 1568.572) rotate(-59)"/>
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 141.571 206">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #2072b2;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        opacity: 0.99;
+      }
+
+      .cls-5, .cls-6 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: #2072b2;
+      }
+
+      .cls-7 {
+        fill: none;
+      }
+
+      .cls-8 {
+        filter: url(#Path_13);
+      }
+    </style>
+    <filter id="Path_13" x="0" y="0" width="141.571" height="206" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8a74d"/>
+      <stop offset="1" stop-color="#fffefe"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_45" data-name="Group 45" transform="translate(-1125.5 -1406.5)">
+    <g id="Group_27" data-name="Group 27" transform="translate(1145 1416)">
+      <g class="cls-8" transform="matrix(1, 0, 0, 1, -19.5, -9.5)">
+        <g id="Path_13-2" data-name="Path 13" class="cls-1" transform="translate(19.5 9.5)">
+          <path class="cls-5" d="M 94.57140350341797 166.5 L 8.00001049041748 166.5 C 3.864489555358887 166.5 0.5000104308128357 163.1355133056641 0.5000104308128357 159 L 0.5000104308128357 8 C 0.5000104308128357 3.864479064941406 3.864489555358887 0.5 8.00001049041748 0.5 L 94.57140350341797 0.5 C 98.70692443847656 0.5 102.071403503418 3.864479064941406 102.071403503418 8 L 102.071403503418 159 C 102.071403503418 163.1355133056641 98.70692443847656 166.5 94.57140350341797 166.5 Z"/>
+          <path class="cls-6" d="M 94.57139587402344 166 C 98.43119812011719 166 101.5713958740234 162.8598022460938 101.5713958740234 159 L 101.5713958740234 8 C 101.5713958740234 4.140195846557617 98.43119812011719 1 94.57139587402344 1 L 8.000001907348633 1 C 4.14019775390625 1 1.000002264976501 4.140195846557617 1.000002264976501 8 L 1.000002264976501 159 C 1.000002264976501 162.8598022460938 4.14019775390625 166 8.000001907348633 166 L 94.57139587402344 166 M 94.57139587402344 167 L 8.000001907348633 167 C 3.581719636917114 167 2.284837819388486e-06 163.4182891845703 2.284837819388486e-06 159 L 2.284837819388486e-06 8 C 2.284837819388486e-06 3.581739187240601 3.581719636917114 1.4210854715202e-14 8.000001907348633 1.4210854715202e-14 L 94.57139587402344 1.4210854715202e-14 C 98.98967742919922 1.4210854715202e-14 102.5713958740234 3.581739187240601 102.5713958740234 8 L 102.5713958740234 159 C 102.5713958740234 163.4182891845703 98.98967742919922 167 94.57139587402344 167 Z"/>
+        </g>
+      </g>
+      <g id="Rectangle_23" data-name="Rectangle 23" class="cls-2" transform="translate(6.017 5)">
+        <rect class="cls-5" width="90.464" height="157" rx="4"/>
+        <rect class="cls-7" x="0.5" y="0.5" width="89.464" height="156" rx="3.5"/>
+      </g>
+      <g id="Rectangle_28" data-name="Rectangle 28" class="cls-3" transform="translate(52.147 5)">
+        <path class="cls-5" d="M0,0H40.334a4,4,0,0,1,4,4V153a4,4,0,0,1-4,4H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z"/>
+        <path class="cls-7" d="M1,.5H40.334a3.5,3.5,0,0,1,3.5,3.5V153a3.5,3.5,0,0,1-3.5,3.5H1a.5.5,0,0,1-.5-.5V1A.5.5,0,0,1,1,.5Z"/>
+      </g>
+      <g id="Rectangle_24" data-name="Rectangle 24" class="cls-2" transform="translate(55.156 29) rotate(90)">
+        <rect class="cls-5" width="41.993" height="5.014" rx="2.507"/>
+        <rect class="cls-7" x="0.5" y="0.5" width="40.993" height="4.014" rx="2.007"/>
+      </g>
+      <g id="Rectangle_29" data-name="Rectangle 29" class="cls-2" transform="translate(36.102 40) rotate(90)">
+        <rect class="cls-5" width="20.993" height="18.051"/>
+        <rect class="cls-7" x="0.5" y="0.5" width="19.993" height="17.051"/>
+      </g>
+    </g>
+    <path id="Path_11" data-name="Path 11" class="cls-4" d="M.2,6.043,118.594-.235l-.219,3.39L-.019,9.433Z" transform="matrix(0.588, -0.809, 0.809, 0.588, 1171.703, 1542.284)"/>
+    <path id="Path_12" data-name="Path 12" class="cls-4" d="M.185,5.914,112.932-.224l-.2,3.231L-.018,9.145Z" transform="matrix(0.588, -0.809, 0.809, 0.588, 1175.414, 1557.615)"/>
+  </g>
+</svg>

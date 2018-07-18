@@ -1,0 +1,13 @@
+<svg id="magnifier-tool" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1c92d2;
+      }
+    </style>
+  </defs>
+  <g id="Group_15" data-name="Group 15" transform="translate(0)">
+    <path id="Path_7" data-name="Path 7" class="cls-1" d="M30,15A15,15,0,1,0,15,30,15,15,0,0,0,30,15ZM15,26.25A11.25,11.25,0,1,1,26.251,15,11.262,11.262,0,0,1,15,26.25Z" transform="translate(-0.001)"/>
+    <path id="Path_8" data-name="Path 8" class="cls-1" d="M310.716,305.42l-9.177-9.177a17.664,17.664,0,0,1-5.3,5.3l9.177,9.177a3.749,3.749,0,0,0,5.3-5.3Z" transform="translate(-271.815 -271.821)"/>
+  </g>
+</svg>

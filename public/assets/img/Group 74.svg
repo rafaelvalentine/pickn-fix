@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 218 219">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #2072b2;
+      }
+
+      .cls-3 {
+        filter: url(#Ellipse_6);
+      }
+    </style>
+    <filter id="Ellipse_6" x="0" y="0" width="218" height="219" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_74" data-name="Group 74" transform="translate(-851 -2130)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, 851, 2130)">
+      <circle id="Ellipse_6-2" data-name="Ellipse 6" class="cls-1" cx="100" cy="100" r="100" transform="translate(9)"/>
+    </g>
+    <g id="Group_73" data-name="Group 73" transform="translate(14 25)">
+      <g id="warranty_1_" data-name="warranty (1)" transform="translate(847.715 2130)">
+        <g id="Group_66" data-name="Group 66" transform="translate(23.285 0)">
+          <g id="Group_65" data-name="Group 65" transform="translate(0 0)">
+            <path id="Path_21" data-name="Path 21" class="cls-2" d="M157.217,24.708l-.2-.035A182.032,182.032,0,0,1,93,.433a2.93,2.93,0,0,0-3.07,0A179.924,179.924,0,0,1,26.3,24.6l-.6.1a2.93,2.93,0,0,0-2.424,2.886V65.942a85.992,85.992,0,0,0,67.55,83.99,2.941,2.941,0,0,0,1.259,0A86.04,86.04,0,0,0,159.642,65.9V27.594A2.929,2.929,0,0,0,157.217,24.708Zm-3.434,41.2a80.679,80.679,0,0,1-62.32,78.165A80.623,80.623,0,0,1,29.144,65.942v-35.9A185.7,185.7,0,0,0,91.467,6.359a187.771,187.771,0,0,0,62.315,23.681Z" transform="translate(-23.285 0)"/>
+          </g>
+        </g>
+      </g>
+      <g id="magnifying-glass" transform="translate(945.95 2204)">
+        <path id="Path_30" data-name="Path 30" class="cls-2" d="M74.4,71.175,56.171,52.949a32.013,32.013,0,1,0-3.16,3.16l18.23,18.226a2.26,2.26,0,0,0,1.58.665,2.191,2.191,0,0,0,1.58-.665A2.248,2.248,0,0,0,74.4,71.175ZM4.524,31.979a27.5,27.5,0,1,1,27.5,27.506A27.522,27.522,0,0,1,4.524,31.979Z"/>
+      </g>
+      <path id="ic_check_24px" class="cls-2" d="M22.328,41.4,8.216,27.283,3.41,32.055,22.328,50.973,62.939,10.362,58.167,5.59Z" transform="translate(905.59 2176.41)"/>
+    </g>
+  </g>
+</svg>

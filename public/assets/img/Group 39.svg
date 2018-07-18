@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 134 206">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #2072b2;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        opacity: 0.99;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+
+      .cls-6 {
+        filter: url(#Rectangle_22);
+      }
+    </style>
+    <filter id="Rectangle_22" x="0" y="0" width="134" height="206" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8aa53"/>
+      <stop offset="1" stop-color="#fffefe"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_39" data-name="Group 39" transform="translate(-231.5 -1406.5)">
+    <g id="Group_24" data-name="Group 24" transform="translate(28 135)">
+      <g class="cls-6" transform="matrix(1, 0, 0, 1, 203.5, 1271.5)">
+        <g id="Rectangle_22-2" data-name="Rectangle 22" class="cls-1" transform="translate(19.5 9.5)">
+          <rect class="cls-4" width="95" height="167" rx="8"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="94" height="166" rx="7.5"/>
+        </g>
+      </g>
+      <g id="Rectangle_23" data-name="Rectangle 23" class="cls-2" transform="translate(230 1303)">
+        <rect class="cls-4" width="81" height="116"/>
+        <rect class="cls-5" x="0.5" y="0.5" width="80" height="115"/>
+      </g>
+      <g id="Ellipse_1" data-name="Ellipse 1" class="cls-1" transform="translate(262 1425)">
+        <circle class="cls-4" cx="8" cy="8" r="8"/>
+        <circle class="cls-5" cx="8" cy="8" r="7.5"/>
+      </g>
+      <g id="Rectangle_24" data-name="Rectangle 24" class="cls-1" transform="translate(258 1292)">
+        <rect class="cls-4" width="26" height="4" rx="2"/>
+        <rect class="cls-5" x="0.5" y="0.5" width="25" height="3" rx="1.5"/>
+      </g>
+    </g>
+    <rect id="Rectangle_34" data-name="Rectangle 34" class="cls-3" width="138" height="5" transform="translate(266.673 1553.842) rotate(-59)"/>
+    <rect id="Rectangle_35" data-name="Rectangle 35" class="cls-3" width="138" height="3" transform="translate(255.387 1554.209) rotate(-59)"/>
+  </g>
+</svg>
