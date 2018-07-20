@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Grid, Row, Col, Image, Button } from 'react-bootstrap'
+import { Grid, Row, Col, Image, Button, Modal, Form, OverlayTrigger, Popover, Tooltip } from 'react-bootstrap'
 import './home.css'
 
+
 export default class Home extends Component {
+
   render () {
     return (
+
     // full width container
       <Grid id='grid' fluid='true'>
+      
         {/* full screen landing page */}
         <Row className=' text-center'id='home'>
           <Col xs={12} sm={12} className=''>
@@ -314,7 +318,7 @@ export default class Home extends Component {
             <p>That's a crooked tree. We'll send him to Washington. These little son of a guns hide in your brush and you just have to push them out.</p>
           </Col>
         </Row> */}
-
+        
       </Grid>
     )
   }
