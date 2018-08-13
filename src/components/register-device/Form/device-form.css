@@ -1,0 +1,43 @@
+/*general style*/
+.modal-dialog{
+	width: 80vw;
+	height:60vh;
+}
+.device-text {
+ font: 16px Montserrat Medium;
+}
+.underrule{
+	/*margin-left: 10px;*/
+}
+.form-control{
+		width: 240px;
+		height: 40px;
+		font-size: 14px;
+		font-weight:100;
+	}
+@media screen and (min-width: 600px){
+	#select{
+	margin:25px 0 0;
+	}
+
+	#formgroupone {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#formgroupone.form-control{
+	margin: 20px;
+}
+.registration__modal--button {
+        color: #fff;
+        width: 144px;
+        height: 40px;
+        background: #1c92d2;
+        margin: 50px auto 0;
+        font-size: 18px;
+}
+.registration__modal--button:hover {
+        color: #fff;
+        background: #1c92d2;
+}
+}

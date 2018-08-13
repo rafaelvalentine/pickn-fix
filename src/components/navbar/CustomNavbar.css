@@ -1,6 +1,6 @@
 nav.navbar,
 .navbar-default {
-    background-color: #fff !important;
+    background-color: transparent !important;
 }
 
 .navbar {
@@ -67,12 +67,14 @@ nav.navbar,
 }
 
 .navbar__logo {
-    width: 150px;
+    z-index: 5;
+    width: 100px;
     height: 50px;
     margin-top: -10px;
 }
 
 .wire_logo {
+    z-index: -1;
     position: absolute;
     top: -320px;
     left: -50%;
@@ -82,6 +84,9 @@ nav.navbar,
 }
 
 @media screen and (min-width: 480px) {
+    .aside__button {
+        display: none;
+    }
     .navbar-default .navbar-nav>li>a {
         color: #1c92d2;
         font-size: 18px;

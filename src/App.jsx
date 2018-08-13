@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Home from './components/landing page/Home'
 import About from './components/About'
 import News from './components/News'
-import Navbar from './components/CustomNavBar'
+import Navbar from './components/navbar/CustomNavBar'
 // import Form from './components/Registration'
 
 class App extends Component {

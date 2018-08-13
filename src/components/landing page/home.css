@@ -29,6 +29,10 @@
     position: relative;
 }
 
+.navbar-toggle {
+    visibility: hidden;
+}
+
 .home__button {
     font-size: 10px;
     margin: 5rem auto 0;

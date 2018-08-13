@@ -1,0 +1,70 @@
+/* genral styles */
+
+.close:focus,
+.close:hover {
+    color: #1c92d2;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+
+
+/* mobile view */
+
+
+/* screen query */
+
+@media screen and (min-width: 600px) {
+    .modal-dialog {
+        width: 60vw;
+        height: 50vh;
+    }
+    .modal-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .modal-header {
+        /*	font-family: "Montserrat";*/
+        border: none;
+    }
+    .title__text {
+        font: 20px Montserrat Medium;
+    }
+    .modal-body {
+        margin: 0 auto 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 70%;
+        padding: 0 0 20px;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+        -webkit-box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+        -moz-box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+        box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+    }
+    form .username,
+    form .password,
+    .registration__modal--button {
+        font: 16px Montserrat Medium;
+    }
+    .continue__modal--button {
+        color: #fff;
+        width: 144px;
+        height: 40px;
+        background: #1c92d2;
+        margin: 20px auto 0;
+        font-size: 18px;
+    }
+    .continue__modal--button:hover {
+        color: #fff;
+        background: #1c92d2;
+    }
+}
