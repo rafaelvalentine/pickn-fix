@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { Button,  Modal, FormControl, FormGroup, ControlLabel} from 'react-bootstrap'
+import { Button,  Modal, FormControl, FormGroup} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import Completed  from '../completed/Completed.jsx'
 import  './device-form.css'
 
 
@@ -10,12 +11,12 @@ export default class DeviceForm extends Component {
 constructor (props, context) {
 		super(props, context)
 
-		this.handleShow = this.handleShow.bind(this)
-		this.handleClose = this.handleClose.bind(this)
+		this.handleShows = this.handleShows.bind(this)
+		this.handleCloses = this.handleCloses.bind(this)
 		this.handleChange = this.handleChange.bind(this);
 
 		this.state = {
-			show: false,
+			shows: false,
 			product:'',
 			brand:'',
 			model:'',
@@ -24,17 +25,14 @@ constructor (props, context) {
 			end:''
 		}
 	}
-	redirectUser = () => {
-		window.location.href = "/about";
+
+	handleCloses () {
+		this.setState({ shows: false })
 	}
 
-	handleClose =(e)=> {
-		this.setState({ show: false })
-	}
-
-	handleShow () {
-		this.setState({ show: true })
-		console.log(this.state)
+	handleShows () {
+		this.setState({ shows: true })
+		console.log(this.state.shows)
 	}
 
 handleChange=(e)=> {	
@@ -48,13 +46,16 @@ handleChange=(e)=> {
 		const {product, brand, model, imei, start, end} = this.state
 		return (
 			<div>
-					<p>Register Device</p>
-					<Button bsStyle='primary' bsSize='large' onClick={this.handleShow}>
+					<p onClick={this.handleShows} >Continue</p>
+					{/* <Button className='continue__modal--button' bsStyle='primary' bsSize='large' onClick={this.handleShow}>
+						continue onClick={this.handleShows}
+					</Button> */}
+					{/* <Button className='continue__modal--button' onClick={this.handleShow}>
 						continue
-					</Button>
-					<Modal show={this.state.show} onHide={this.handleClose}>
+					</Button> */}
+					<Modal show={this.state.shows} onHide={this.handleCloses} className='register__modal'>
 						<Modal.Header closeButton>
-							<h3 className='title__text text-center'>Register Device</h3>
+							<h3 className='title__text text-center'>Register a device</h3>
 								<hr className='underrule'/>
 						</Modal.Header>
 						<Modal.Body>
@@ -103,13 +104,6 @@ handleChange=(e)=> {
 											</FormGroup>
 											<FormGroup controlId="">
 												<div id='formgroupone'>
-															{/*<div id='select'>
-													      <ControlLabel className='device-text'>Select</ControlLabel>
-													      <FormControl componentClass="select" placeholder="select">
-													        <option value="select">select</option>
-													        <option value="other">...</option>
-													      </FormControl>
-												      </div>*/}
 												      <div>
 																	<h3 className='device-text'>Warranty Start</h3>
 																	<FormControl
@@ -130,7 +124,8 @@ handleChange=(e)=> {
 															</div>
 													</div>
 									      </FormGroup>
-											<Button className='registration__modal--button' onClick={this.redirectUser}>Register</Button>
+											{/* <Button className='registration__modal--button' onClick={this.redirectUser}>Register</Button> */}
+											<Button className='registration__modal--button'><Completed /></Button>
 							</form>
 						 </Modal.Body>
 					</Modal>

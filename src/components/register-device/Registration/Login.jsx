@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import { Button, Modal, FormControl, FormGroup, ControlLabel } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import DeviceForm from '../Form/Device-Form.jsx'
 
-import '../../landing page/home.css'
 import './login.css'
+import Sidebar from '../../sidebar/Sidebar';
 
-export default class Registration extends Component {
+export default class Login extends Component {
 
 	constructor (props, context) {
 		super(props, context)
@@ -20,7 +21,7 @@ export default class Registration extends Component {
 			password:''
 		}
 	}
-	handleModal = e => {
+	handleModal =(e)=> {
 		e.preventDefault();
 		this.setState(previousState => {
 			show: !previousState.show
@@ -36,8 +37,19 @@ export default class Registration extends Component {
 	}
 
 	handleShow () {
+		// var sideNav = document.getElementById('mysidenav')
+    // var sideNavContent = document.getElementById('mysidebarprimarycontent')
+    // var button2 = document.getElementById('Aside__Button2')
+		// var body = document.getElementById('main')
+		// var registerSideNav = document.getElementById('registersidenav')
+		// sideNav.style.width = '0'
+		// sideNavContent.style.width = '0'
+		// body.style.overflow = 'visible'
+		// button2.style.visibility = 'hidden'
+		// registerSideNav.style.width = '0'
 		this.setState({ show: true })
 		console.log(this.state)
+		// console.log(Sidebar.state.show)
 	}
 	getValidationState() {
 		const length = this.state.username.length;
@@ -98,14 +110,15 @@ export default class Registration extends Component {
 		const {username, password} = this.state
 		return (
 			<div>
-					<p>Click to get the full Modal experience!</p>
+					<p onClick={this.handleShow}>Register a new Device</p>
 
-					<Button bsStyle='primary' bsSize='large' onClick={this.handleShow}>
+					{/* <Button bsStyle='primary' bsSize='large' >
 						Launch demo modal
-					</Button>
-					<Modal show={this.state.show} onHide={this.handleClose}>
-						<Modal.Header closeButton>
-							<h3 className='title__text text-center'>Register Device</h3>
+					</Button> */}
+					<Modal show={this.state.show} onHide={this.handleClose} className='login__modal'>
+					<div>
+					<Modal.Header closeButton className='login__modal--header'>
+							<h3 className='title__text text-center'>Register a device</h3>
 								<hr className='underrule'/>
 						</Modal.Header>
 						<Modal.Body>
@@ -118,7 +131,7 @@ export default class Registration extends Component {
 												type="text"
 												value={username}
 												name="username"
-												placeholder="Enter Username"
+												placeholder=""
 												onChange={this.handleChange}/>		
 											</FormGroup>
 										<FormGroup controlId="formPassowrd"
@@ -128,13 +141,18 @@ export default class Registration extends Component {
 													type="password"
 													value={password}
 													name="password"
-													placeholder="Enter Password"
+													placeholder=""
 													onChange={this.handleChange}/>
 												<p id="passwordtext"></p>
 										</FormGroup>
-										<Button className='continue__modal--button' onClick={this.redirectUser}>Continue</Button>
+										{/* <DeviceForm onHide={this.handleClose}onClick={this.handleShow}onClick={this.handleClose}/> */}
+									 <Button className='continue__modal--button'>
+									  <DeviceForm  />
+									 </Button>
+											{/*<Button className='continue__modal--button' onClick={this.handleShow}></Button> */}
 							</form>
 						 </Modal.Body>
+					</div>
 					</Modal>
 			</div>
 		)

@@ -1,43 +1,105 @@
-/*general style*/
-.modal-dialog{
-	width: 80vw;
-	height:60vh;
-}
-.device-text {
- font: 16px Montserrat Medium;
-}
-.underrule{
-	/*margin-left: 10px;*/
-}
-.form-control{
-		width: 240px;
-		height: 40px;
-		font-size: 14px;
-		font-weight:100;
-	}
-@media screen and (min-width: 600px){
-	#select{
-	margin:25px 0 0;
-	}
+/*Mobile Screen*/
 
-	#formgroupone {
-	display:flex;
-	flex-direction: row;
-	justify-content: space-around;
+.register__modal .modal-dialog {
+    margin: 56px auto 0;
+    width: 90vw;
+    height: 50vh;
 }
-#formgroupone.form-control{
-	margin: 20px;
+
+.register__modal .modal-content {
+    border-radius: 10px;
 }
-.registration__modal--button {
+
+.register__modal .modal-header {
+    border: none;
+    padding: 40px auto 20px;
+}
+
+.register__modal .title__text {
+    font: 14px Montserrat Medium;
+    margin: 40px 0 -10px;
+}
+
+.register__modal .device-text {
+    font: 10px Montserrat Medium;
+}
+
+.register__modal .underrule {
+    width: 84px;
+}
+
+.register__modal .modal-body {
+    margin: -30px auto 30px;
+    width: 100%;
+    padding: 0 0 20px;
+}
+
+.register__modal form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0 50px;
+    width: 90%;
+    margin: -30px auto 0;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+    -moz-box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+    box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+}
+
+.register__modal #formgroupone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.register__modal .form-control {
+    width: 120px;
+    height: 24px;
+    font-size: 10px;
+    font-weight: regular;
+    text-align: center;
+    line-height: 1;
+    padding: 2px;
+}
+
+.register__modal .registration__modal--button {
+    color: #fff;
+    width: 104px;
+    height: 24px;
+    background: #1c92d2;
+    margin: 30px auto 0;
+    font: 10px Montserrat Medium;
+    line-height: 1;
+}
+
+.register__modal .registration__modal--button:hover {
+    color: #fff;
+    background: #1c92d2;
+}
+
+@media screen and (min-width: 600px) {
+    .register__modal #select {
+        margin: 25px 0 0;
+    }
+    .register__modal #formgroupone {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .register__modal #formgroupone.form-control {
+        margin: 20px;
+    }
+    .register__modal .registration__modal--button {
         color: #fff;
         width: 144px;
         height: 40px;
         background: #1c92d2;
         margin: 50px auto 0;
         font-size: 18px;
-}
-.registration__modal--button:hover {
+    }
+    .register__modal .registration__modal--button:hover {
         color: #fff;
         background: #1c92d2;
-}
+    }
 }

@@ -1,0 +1,41 @@
+#registersidenav__p {
+    margin: 0;
+}
+
+#registersidenavprimarycontent {
+    margin-left: -40px;
+}
+
+#registersidenav__p span {
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#registersidenavprimarycontent__list {
+    color: #262A39;
+}
+
+#registersidenavprimarycontent__list li p {
+    margin: 0;
+    padding: 0;
+}
+
+#registersidenavprimarycontent__list .list__item {
+    padding: 14px;
+}
+
+#registersidenavprimarycontent__list .home {
+    padding: 0;
+}
+
+#registersidenavprimarycontent__list .home__register {
+    padding: 14px;
+}
+
+#registersidenavprimarycontent__list .home__glyph {
+    margin-right: 30px;
+    padding: 14px;
+    border-right: 0.1px solid #1c92d2;
+    width: 50px;
+}

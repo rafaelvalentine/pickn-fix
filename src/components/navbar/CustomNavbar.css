@@ -1,10 +1,21 @@
 nav.navbar,
 .navbar-default {
     background-color: transparent !important;
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0.0);
 }
 
-.navbar {
-    /* float: left; */
+.container:after,
+.navbar:after {
+    clear: none;
+}
+
+.div-brand {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-toggle {
+    visibility: hidden;
 }
 
 .navbar-default {
@@ -70,7 +81,7 @@ nav.navbar,
     z-index: 5;
     width: 100px;
     height: 50px;
-    margin-top: -10px;
+    margin-top: -15px;
 }
 
 .wire_logo {
@@ -84,8 +95,19 @@ nav.navbar,
 }
 
 @media screen and (min-width: 480px) {
+    .navbar-toggle {
+        visibility: visible;
+        color: #1c92d2;
+    }
+    .navbar-right li {
+        padding-top: 10px;
+    }
     .aside__button {
         display: none;
+    }
+    .container {
+        padding-bottom: 20px;
+        border: none;
     }
     .navbar-default .navbar-nav>li>a {
         color: #1c92d2;
@@ -96,6 +118,7 @@ nav.navbar,
         width: 173px;
         height: 53px;
         margin-top: -10px;
+        margin-bottom: 20px;
     }
     .wire_logo {
         position: absolute;

@@ -1,3 +1,5 @@
+/* mobile screen */
+
 #home {
     display: flex;
     flex-direction: column;
@@ -27,10 +29,6 @@
     padding-top: 15%;
     min-height: 100vh;
     position: relative;
-}
-
-.navbar-toggle {
-    visibility: hidden;
 }
 
 .home__button {
@@ -445,6 +443,9 @@
     /* transform: rotateX(40deg); */
     z-index: 10;
 }
+
+
+/* screen query */
 
 @media screen and (min-width: 480px) {
     #home--div {

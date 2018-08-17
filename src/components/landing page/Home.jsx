@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Grid, Row, Col, Image, Button } from 'react-bootstrap'
 import './home.css'
-import Login from '../register-device/Registration/Login.jsx'
-import DeviceForm from '../register-device/Form/Device-Form.jsx'
-import Sidebar from '../navbar/Sidebar.jsx'
 
 export default class Home extends Component {
   render () {
@@ -15,10 +12,8 @@ export default class Home extends Component {
         {/* full screen landing page */}
         <Row className=' text-center'id='home'>
           <Col xs={12} sm={12} className=''>
-            <DeviceForm />
-            <Login />
-            <Sidebar />
-
+            {/* <DeviceForm />
+            <Login /> */}
             <div id='home--div'>
               <h1>
                    Go ahead, Fix your devices....

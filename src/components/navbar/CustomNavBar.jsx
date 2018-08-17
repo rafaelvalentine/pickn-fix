@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Navbar, Nav, NavItem, Image} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
-import Sidebar from '../navbar/Sidebar.jsx'
+import Sidebar from '../sidebar/Sidebar.jsx'
 import './CustomNavbar.css'
 
 export default class CustomNavBar extends Component {
@@ -11,9 +11,11 @@ export default class CustomNavBar extends Component {
         <Navbar.Header>
 
           <Navbar.Brand>
-            <Sidebar id='sidebar' />
+            <div className='div-brand'>
+              <Sidebar id='sidebar' />
+              <Link to='/'>  <Image src='assets/img/logo.svg'className='navbar__logo' /> </Link>
+            </div>
             <Image className='wire_logo'src='assets/img/wire_logo.svg' />
-            <Link to='/'>  <Image src='assets/img/logo.svg'className='navbar__logo' /> </Link>
           </Navbar.Brand>
         </Navbar.Header>
         <Navbar.Toggle />
