@@ -26,7 +26,6 @@ export default class RegisterSideNav extends Component {
     var body = document.getElementById('main')
 
     if (this.state.register) {
-
       // open sideNav
       registerSideNav.style.width = '85%'
       sideNavContent.style.width = '0'
@@ -35,7 +34,6 @@ export default class RegisterSideNav extends Component {
       this.setState({ register: false })
       console.log('from registersidenav it is set to FALSE now ', this.state.register)
     } else {
-
       // close sidenav
       registerSideNav.style.width = '0'
       sideNavContent.style.width = '85%'
@@ -60,7 +58,7 @@ export default class RegisterSideNav extends Component {
             </ul>
           </div>
         </aside>
-        <p id='registersidenav__p'className='' onClick={this.handleShow} >
+        <p id='registersidenav__p'className='' onClick={this.handleShow}>
         Register <span><Glyphicon glyph='chevron-right' /></span>
         </p>
       </div>
