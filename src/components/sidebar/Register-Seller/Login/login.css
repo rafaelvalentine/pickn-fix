@@ -1,0 +1,151 @@
+/* genral styles */
+
+.close:focus,
+.close:hover {
+    color: #1c92d2;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+
+/* mobile view */
+
+.login__modal .modal-dialog {
+    margin: 56px auto 0;
+    width: 90%;
+    height: 70%;
+}
+
+.login__modal .modal-content {
+    border-radius: 10px;
+}
+
+.login__modal .login__modal--header {
+    border: none;
+    padding: 40px auto 20px;
+}
+
+.login__modal .title__text {
+    font: 14px Montserrat Medium;
+}
+
+.login__modal .underrule {
+    width: 84px;
+}
+
+.login__modal .modal-body {
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0 20px;
+}
+
+
+/* .login__modal div {
+     padding: 10px; 
+    -webkit-box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+    -moz-box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+    box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+} */
+
+.login__modal form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 90%;
+    margin: -30px auto 0;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+    -moz-box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+    box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+}
+
+.login__modal form input {
+    margin: 0 auto;
+    width: 160px;
+    height: 25px;
+}
+
+.login__modal form .username,
+.login__modal form .password,
+.login__modal .registration__modal--button {
+    font: 10px Montserrat Medium;
+}
+
+.login__modal .continue__modal--button {
+    display: block;
+    margin: 20px auto 50px !important;
+    color: #fff;
+    width: 104px;
+    height: 24px;
+    background: #1c92d2;
+    font: 10px Montserrat medium;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1;
+}
+
+.login__modal .continue__modal--button:hover {
+    color: #fff;
+    background: #1c92d2;
+}
+
+
+/* screen query */
+
+@media screen and (min-width: 600px) {
+    .login__modal .modal-dialog {
+        width: 60vw;
+        height: 50vh;
+    }
+    .login__modal .modal-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .login__modal .modal-header {
+        border: none;
+    }
+    .login__modal .title__text {
+        font: 20px Montserrat Medium;
+    }
+    .login__modal .modal-body {
+        margin: 0 auto 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 70%;
+        padding: 0 0 20px;
+    }
+    .login__modal form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+        -webkit-box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+        -moz-box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+        box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+    }
+    .login__modal form .username,
+    .login__modal form .password,
+    .login__modal .registration__modal--button {
+        font: 16px Montserrat Medium;
+    }
+    .login__modal .continue__modal--button {
+        color: #fff;
+        width: 144px;
+        height: 40px;
+        background: #1c92d2;
+        margin: 20px auto 0;
+        font-size: 18px;
+    }
+    .login__modal .continue__modal--button:hover {
+        color: #fff;
+        background: #1c92d2;
+    }
+}

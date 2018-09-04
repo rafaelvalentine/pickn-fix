@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Button, Glyphicon, Image} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
-import Login from '../../register-device/Registration/Login'
+import Login from '../../Register-Device/Login/Login'
 import './registerSideNav.css'
 
 export default class RegisterSideNav extends Component {

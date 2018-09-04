@@ -33,8 +33,6 @@ export default class Login extends Component {
 
   handleClose () {
     this.setState({ show: false })
-    // DeviceForm.setState({shows: true})
-    // document.getElementById('login__modal').style.display = 'none'
   }
 
   handleShow () {
@@ -94,7 +92,7 @@ export default class Login extends Component {
       return passwordText.textContent = strText[fullStrength], passwordText.style.color = strColor[fullStrength], 'error'
     }
     return null
-		 }
+  }
   handleChange (e) {
     this.setState({
       [e.target.name]: e.target.value
