@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import {Button, Glyphicon, Image} from 'react-bootstrap'
-import {Link} from 'react-router-dom'
-import Register from './register-sidenav/RegisterSideNav.jsx'
+import { Button, Glyphicon, Image } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import Register from './Registration-SideNav/RegisterSideNav.jsx'
 import './sidebar.css'
 
 export default class Sidebar extends Component {

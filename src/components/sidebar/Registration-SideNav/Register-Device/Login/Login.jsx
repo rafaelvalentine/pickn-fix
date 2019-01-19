@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import DeviceForm from '../Form/Device-Form.jsx'
 
 import './login.css'
-import Sidebar from '../../sidebar/Sidebar'
+// import Sidebar from '../../sidebar/Sidebar'
 
 export default class Login extends Component {
   constructor (props, context) {
@@ -16,6 +16,7 @@ export default class Login extends Component {
 
     this.state = {
       show: false,
+      shows: false,
       username: '',
       password: ''
     }
@@ -32,7 +33,10 @@ export default class Login extends Component {
   }
 
   handleClose () {
-    this.setState({ show: false })
+    this.setState({
+      show: false,
+      shows: true
+    })
   }
 
   handleShow () {
@@ -46,7 +50,9 @@ export default class Login extends Component {
     // body.style.overflow = 'visible'
     // button2.style.visibility = 'hidden'
     // registerSideNav.style.width = '0'
-    this.setState({ show: true })
+    this.setState({
+      show: true,
+      shows: false })
     console.log(this.state)
     // console.log(Sidebar.state.show)
   }
@@ -100,7 +106,7 @@ export default class Login extends Component {
   }
 
   render () {
-    const {username, password} = this.state
+    const { username, password } = this.state
     return (
       <div>
         <p onClick={this.handleShow}>Register a new Device</p>
@@ -135,14 +141,14 @@ export default class Login extends Component {
                   <p id='passwordtext' />
                 </FormGroup>
                 {/* <DeviceForm onHide={this.handleClose}onClick={this.handleShow}onClick={this.handleClose}/> */}
-                <Button className='continue__modal--button'onClick={this.handleClose}>
-                  <DeviceForm />
-                </Button>
+                <Button className='continue__modal--button'onClick={this.handleClose} />
+
                 {/* <Button className='continue__modal--button' onClick={this.handleShow}></Button> */}
               </form>
             </Modal.Body>
           </div>
         </Modal>
+        <DeviceForm shows={this.state.shows} />
       </div>
     )
   }

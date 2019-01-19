@@ -1,18 +1,19 @@
 import React, { Component } from 'react'
-import {Button, Modal, FormControl, FormGroup} from 'react-bootstrap'
+import { Button, Modal, FormControl, FormGroup } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import Completed from '../completed/Completed.jsx'
+import Completed from '../Completed/Completed.jsx'
 import './device-form.css'
 
 export default class DeviceForm extends Component {
   constructor (props, context) {
     super(props, context)
 
-    this.handleShows = this.handleShows.bind(this)
-    this.handleCloses = this.handleCloses.bind(this)
+    this.handleShow = this.handleShow.bind(this)
+    this.handleClose = this.handleClose.bind(this)
     this.handleChange = this.handleChange.bind(this)
 
     this.state = {
+      show: false,
       shows: false,
       product: '',
       brand: '',
@@ -23,13 +24,15 @@ export default class DeviceForm extends Component {
     }
   }
 
-  handleCloses () {
-    this.setState({ shows: false })
+  handleClose () {
+    this.setState({
+      show: false,
+      shows: true })
   }
 
-  handleShows () {
-    this.setState({ shows: true })
-    console.log(this.state.shows)
+  handleShow () {
+    this.setState({ show: true })
+    console.log(this.state.show)
   }
 
   handleChange (e) {
@@ -39,11 +42,13 @@ export default class DeviceForm extends Component {
   }
 
   render () {
-    const {product, brand, model, imei, start, end} = this.state
+    const { product, brand, model, imei, start, end } = this.state
     return (
       <div>
-        <p onClick={this.handleShows} >Continue</p>
-        <Modal show={this.state.shows} onHide={this.handleCloses} className='register__modal'>
+        {/* <p onClick={this.handleShows} >Continue</p> */}
+        {/* <p>Continue</p> */}
+        <Modal show={this.props.shows} onHide={this.handleClose} className='register__modal'>
+          {/* <Modal show={this.state.show} onHide={this.handleCloses} className='register__modal'> */}
           <Modal.Header closeButton>
             <h3 className='title__text text-center'>Register a device</h3>
             <hr className='underrule' />
@@ -84,7 +89,7 @@ export default class DeviceForm extends Component {
                   <div>
                     <h3 className='device-text'>IMEI/Serial Number</h3>
                     <FormControl
-                      type='password'
+                      type='number'
                       value={imei}
                       name='imei'
                       placeholder='BZ100000000'
@@ -97,7 +102,7 @@ export default class DeviceForm extends Component {
                   <div>
                     <h3 className='device-text'>Warranty Start</h3>
                     <FormControl
-                      type='text'
+                      type='date'
                       value={start}
                       name='start'
                       placeholder='01/01/2017'
@@ -106,7 +111,7 @@ export default class DeviceForm extends Component {
                   <div>
                     <h3 className='device-text'>Warranty Ends</h3>
                     <FormControl
-                      type='text'
+                      type='date'
                       value={end}
                       name='end'
                       placeholder='01/01/2018'
@@ -115,7 +120,7 @@ export default class DeviceForm extends Component {
                 </div>
               </FormGroup>
               {/* <Button className='registration__modal--button' onClick={this.redirectUser}>Register</Button> */}
-              <Button className='registration__modal--button'><Completed /></Button>
+              <Button className='registration__modal--button' onClick={this.handleClose}><Completed shows={this.state.shows} /></Button>
             </form>
           </Modal.Body>
         </Modal>

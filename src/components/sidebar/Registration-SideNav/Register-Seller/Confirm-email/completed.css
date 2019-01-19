@@ -1,0 +1,72 @@
+/* mobile screen */
+
+.completed__modal .modal-dialog {
+    margin: 56px auto 0;
+    width: 90vw;
+    height: 50vh;
+}
+
+.completed__modal .modal-content {
+    border-radius: 10px;
+}
+
+.completed__modal .modal-header {
+    border: none;
+    padding: 40px auto 20px;
+    text-align: center;
+}
+
+.completed__modal .completed__modal--div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #1c92d2;
+    border-radius: 50px;
+    margin: 20px auto 0;
+}
+
+.completed__modal .completed__modal--pic {
+    display: block;
+    margin: auto;
+    width: 16.5px;
+    height: 12.5px;
+}
+
+.completed__modal .title__text {
+    font: 14px Montserrat Medium;
+}
+
+.completed__modal .modal-body {
+    margin: 5px auto 20px;
+    width: 95%;
+    padding: 0 0 80px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+    -moz-box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+    box-shadow: 1px 6px 12px -5px rgba(112, 112, 112, 1);
+    position: relative;
+}
+
+.completed__modal .completed__modal--button {
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    width: 104px;
+    height: 24px;
+    background: #1c92d2;
+    font: 10px Montserrat Medium;
+    line-height: 1;
+}
+
+.completed__modal .completed__modal--button:hover {
+    color: #fff;
+    background: #1c92d2;
+}
+
+.completed__modal .completed__modal--wire__logo {
+    position: absolute;
+    bottom: -160px;
+    right: -250px;
+}

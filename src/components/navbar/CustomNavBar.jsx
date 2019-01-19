@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Navbar, Nav, NavItem, Image} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
-import Sidebar from '../sidebar/Sidebar.jsx'
+import Sidebar from '../SideBar/Sidebar.jsx'
 import './CustomNavbar.css'
 
 export default class CustomNavBar extends Component {
